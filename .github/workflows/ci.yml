@@ -33,25 +33,10 @@ jobs:
       - name: install py.test
         run: sudo apt-get install python-pytest
 
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
+      - name: Call test via py.test
+        run: py.test -s -v test.py
 
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
-
-      # Runs a single command using the runners shell
-      - name: Call test
-        run: py.test -v test.py
-
-      # Runs test without py.test
-      - name: Call test
+      - name: Call test via Makefile
         run: make
 
-     # Runs test without py.test
-      - name: Call test
-        run: emacs notes.org --script org-files-to-html.el
 
