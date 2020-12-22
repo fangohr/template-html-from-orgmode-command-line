@@ -1,3 +1,5 @@
+https://github.com/fangohr/template-html-from-orgmode-command-line/workflows/CI/badge.svg
+
 # Purpose
 
 Allow compiling of `html` output from `org` source file
