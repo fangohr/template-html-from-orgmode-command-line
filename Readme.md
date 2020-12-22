@@ -1,4 +1,4 @@
-https://github.com/fangohr/template-html-from-orgmode-command-line/workflows/CI/badge.svg
+[![Workflow bade](https://github.com/fangohr/template-html-from-orgmode-command-line/workflows/CI/badge.svg)](https://github.com/fangohr/template-html-from-orgmode-command-line/actions)
 
 # Purpose
 
