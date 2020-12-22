@@ -28,7 +28,7 @@ jobs:
 
 
       - name: install emacs
-        run: sudo apt-get install emacs
+        run: sudo apt-get install emacs elpa-htmlize
 
       - name: install py.test
         run: sudo apt-get install python-pytest
@@ -46,3 +46,12 @@ jobs:
       # Runs a single command using the runners shell
       - name: Call test
         run: py.test -v test.py
+
+      # Runs test without py.test
+      - name: Call test
+        run: make
+
+     # Runs test without py.test
+      - name: Call test
+        run: emacs notes.org --script org-files-to-html.el
+
